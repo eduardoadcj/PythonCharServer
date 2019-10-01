@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import socket, select
 
 def broadcast_data (sock, message):
@@ -22,7 +23,7 @@ if __name__ == "__main__":
 
     CONNECTION_LIST.append(server_socket)
 
-    print("Chat online na porta" + str(PORT))
+    print("Chat online na porta " + str(PORT))
 
     while 1:
         read_sockets,write_sockets,error_sockets = select.select(CONNECTION_LIST,[],[])
